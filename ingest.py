@@ -21,7 +21,7 @@ def create_sample_df(nsize: int, ids: list, ts_start: str, ts_freq: str = '1S',
     Parameters
     ----------
     nsize: int
-        Number of rows the df will have (default is 10).
+        Number of rows the df will have.
     ids : list
         List of ids, which will be chosen randomly when generating the `time` column.
     ts_start : str
@@ -52,6 +52,7 @@ def create_sample_df(nsize: int, ids: list, ts_start: str, ts_freq: str = '1S',
     df = pd.DataFrame(data=list(zip(lst_ids, ts_range, lst_values)), columns=['id', 'time', 'value'])
 
     return df
+
 
 
 def send_df_to_postgres(df, chunksize: int, user: str = 'root', password: str = 'root', host: str = 'localhost', 
