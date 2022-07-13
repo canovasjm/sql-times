@@ -5,7 +5,7 @@ import numpy as np
 import random
 from random import choice
 from sqlalchemy import create_engine
-
+from datetime import datetime
 
 # https://pandas.pydata.org/docs/reference/api/pandas.date_range.html
 # https://pandas.pydata.org/docs/user_guide/timeseries.html#timeseries-offset-aliases
@@ -55,7 +55,7 @@ def create_sample_df(nsize: int, ids: list, ts_start: str, ts_freq: str = '1S',
 
 
 
-def send_df_to_postgres(df, chunksize: int, user: str = 'root', password: str = 'root', host: str = 'localhost', 
+def send_df_to_postgres(df: pd.DataFrame, chunksize: int, user: str = 'root', password: str = 'root', host: str = 'localhost', 
                         port: int = 5432, db: str = 'sql_times', table_name: str = 'table_name'):
     """
     Function to send a pandas dataframe to Postgres database.
