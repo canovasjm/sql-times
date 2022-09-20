@@ -33,7 +33,10 @@ https://canovasjm.netlify.app/2022/09/18/downsample-time-series-in-sql/
 ![image](https://user-images.githubusercontent.com/19241669/191153021-7399fa6e-997b-41f3-b2ff-7369b2ebcd61.png)
 
 
-8. Once you have finished, go back to the terminal and type `docker-compose down`     
+8. Click the button to open the query editor and follow the arrows to find your tables:  
+![image](https://user-images.githubusercontent.com/19241669/191153848-1b9c622e-f6c5-44c0-a1af-bcc07fef0345.png)
+
+9. Once you have finished, go back to the terminal and type `docker-compose down`     
 
 ## A word of caution 
 In the `docker-compose.yaml` file and in steps 5) and 7) we are hardcoding credentials. Even though this is not a good practice, and we should avoid it by all means, here we are dealing with an example and make up data.
