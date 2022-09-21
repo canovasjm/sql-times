@@ -3,7 +3,7 @@
 This repo has code for a blog post about aggregating time series (aka *downsampling*) with SQL. Link to the blog post:   
 https://canovasjm.netlify.app/2022/09/18/downsample-time-series-in-sql/  
 
-## To reproduce the example:  
+## To reproduce the example    
 
 1. Clone the repo: `git clone https://github.com/canovasjm/sql-times.git`  
 
